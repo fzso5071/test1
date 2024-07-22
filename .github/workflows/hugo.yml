@@ -52,9 +52,6 @@ jobs:
       - name: New Site
         run: hugo new site website
         
-      - name: Theme
-        run: cd themes
-        
       - name: Theme1
         run: git clone https://github.com/spf13/hyde.git
         

@@ -48,8 +48,16 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        
       - name: New Site
         run: hugo new site website
+        
+      - name: Theme
+        run: cd themes
+        
+      - name: Theme1
+        run: git clone https://github.com/spf13/hyde.git
+        
       - name: New About
         run: hugo new about.md
       - name: Build with Hugo

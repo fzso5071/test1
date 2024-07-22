@@ -54,6 +54,9 @@ jobs:
         
       - name: Theme1
         run: git clone https://github.com/spf13/hyde.git
+
+      - name: waht
+        run: mkdir content
         
       - name: New About
         run: hugo new about.md
